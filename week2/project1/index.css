@@ -1,0 +1,32 @@
+#first-id{
+color:darkgreen;
+}
+.body, h1, h2{
+    font-family: Georgia;
+    text-align: center;
+}
+.all-paragraphs{
+    line-height: 25px;
+
+}
+.body, a{
+    text-decoration: none;
+    
+}
+.footer, #upper-case{
+text-transform: uppercase;
+}
+.footer, #new-link{
+    text-transform: lowercase;
+}
+.body, a:hover {
+color:lightseagreen;
+text-decoration:underline;
+}
+#image{
+    float:left;
+    margin-right: 50px;
+    
+    
+
+}
