@@ -1,0 +1,29 @@
+#black{
+    background-color:rgb(0, 0, 255);
+}
+#header-blue{
+    color:rgb(111, 190, 221);
+}
+#blue{
+    color:rgb(62, 182, 238);
+}
+table, th, td, tr{
+    border: 1px solid black;
+}
+.new-color{
+    background-color:rgb(183, 123, 240);
+}
+ .new-blue{
+    background-color: skyblue;
+}
+aside{
+    border: 1px solid black;
+    background-color: rgb(247, 73, 102);
+     float: right;   
+
+}
+#hot-pink{
+    font-family: 'Franklin Gothic Medium';
+    color: hotpink;
+}
+
