@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Pacifico';
+    font-size: 30px;
+}
+
+body{
+    background-image: url("./images/GettyImages-652470220-594301495f9b58d58aa90adb.jpg");
+    margin-bottom: 500px;
+    height: 165vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+ul, li, a {
+    text-decoration: none;
+    color: rgb(233, 30, 131);
+    transition: 0.8s ease;
+}
+
+ul, li, a:hover {
+color: cyan;    
+}
+
+a{
+    border-style: solid;
+    border-spacing: 50px;
+}
+#Welcome {
+    color: rgb(255, 35, 145);
+    text-decoration: underline;
+}
+h4 {
+    color:aqua;
+    text-decoration: underline;
+}
+
+.main-Box {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 200px;
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+#grid1 {
+    border: 8px solid blue;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 25px;
+    background-image: url("./images/bora.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#intro{
+    color: rgb(11, 245, 136);
+}
+#grid2{
+    border: 8px solid rgb(252, 119, 141);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 25px;
+    background-image: url("./images/caribbean_islands.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#intro2{
+    color:rgb(243, 12, 147);
+}
+#grid3{
+    border: 8px solid purple;
+    text-align: center;
+    padding: 20px 10px;
+    font-size:25px;
+    background-image: url("./images/night_island2.jpg");
+    background-size: cover;
+     background-position: center;
+}
+#intro3{
+    color: #ff9100
+}
+article:hover{
+color: salmon;
+transition: 0.9s ease;
+}
+#p1 {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 15px;
+}
+
+#grid5{
+    border: 8px solid rgb(205, 236, 25);
+    text-align: center;
+    background-image: url("./images/Buffet_New.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#intro4 {
+    color:#ff0f0f;
+    padding: 20px 10px;
+    font-size: 25px;
+}
+#grid6 {
+    border: 8px solid springgreen;
+    text-align: center;
+    background-image: url("./images/coco_drinks.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#intro5{
+    color:darkturquoise;
+    padding: 20px 10px;
+    font-size: 25px;
+}
+
+footer{
+    float: left;
+
+}
+#ul2{
+    margin-top: 800px;
+}
+
+
+
+
