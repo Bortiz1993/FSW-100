@@ -103,6 +103,7 @@ article:hover{
 color: salmon;
 transition: 0.9s ease;
 }
+
 #p1 {
     text-align: center;
     padding: 20px 10px;
@@ -134,10 +135,19 @@ transition: 0.9s ease;
     font-size: 25px;
 }
 
-footer{
-    float: left;
+footer, img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    transition: 3s;
 
 }
+img:hover{
+    height: 175px;
+    width: 175px;
+
+}
+
 #ul2{
     margin-top: 800px;
 }
@@ -145,6 +155,8 @@ footer{
     color:rgb(250, 8, 129)
 
 }
+
+
 
 
 
