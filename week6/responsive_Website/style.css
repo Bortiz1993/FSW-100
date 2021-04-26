@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(79, 241, 225);
+}
+#container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35% 125% 40% 20% 25%;
+    column-gap: 15px;
+    row-gap: 15px; 
+}
+header {
+    text-align: center;
+    font-family: Pacifico;
+    padding-left: 50px;
+    font-size: 18px;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+main {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/week6/responsive_Website/resort_Water.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    grid-row: 1;
+    grid-column: 2/5 ;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ul {
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul, li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+ul, li, a {
+    font-family: Pacifico;
+    text-decoration: none;
+    color: rgb(233, 30, 131);
+    transition: 0.8s ease;
+}
+
+ul, li, a:hover {
+color: rgb(9, 238, 238);    
+}
+
+a{
+    border-style: none;
+    border-spacing: 50px;
+}
+
+main {
+    grid-row: 2/2;
+    grid-column: 1/5;   
+}
+h4 {
+    color: hotpink;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: Pacifico;
+    position: absolute;
+    left: 13% ;
+    transform: translateX(-50%);
+}
+    
+figure {
+    grid-row: 3;
+}
+#figure1 {
+    color: rgb(0, 255, 242);
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 22px;
+    border: 3px solid blue;
+    padding: 10px 10px;
+    margin-left: 10px;
+    background-image: url("./bora.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#figure2 {
+    color:rgb(255, 16, 136);
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 22px;
+    border: 3px solid rgb(255, 9, 132);
+    padding: 10px 10px;
+    margin-left: 10px;
+    background-image: url("/week6/responsive_Website/caribbean_islands.jpg");
+    background-size: cover;
+    background-position: center
+}
+#figure3 {
+    color: rgb(255, 87, 45);
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 22px;
+    border: 3px solid purple;
+    padding: 10px 10px;
+    margin-left: 10px;
+    background-image: url("./night_island2.jpg");
+    background-size: cover;
+    background-position: center
+}
+#figure4 {
+    color: rgb(29, 251, 255);
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 30px;
+    border: 3px solid springgreen;
+    padding: 10px 10px;
+    margin-right: 10px;
+    background-image: url("./coco_drinks.jpg");
+    background-size: cover;
+    background-position: center
+}
+article {
+    grid-row: 4;
+}
+p {
+    text-align: center;
+    font-family: Impact;
+}
+footer{
+    background-color: rgb(5, 196, 196);
+    grid-row: 5;
+    text-align: center;
+
+}
+#myfooter1 p {
+    font-family: Pacifico;
+    color: rgb(255, 23, 139);
+
+}
+#myfooter3 {
+    background-image: url("./istockphoto-584209092-1024x1024.jpg");
+    background-size: cover;
+    background-position: center;
+}
