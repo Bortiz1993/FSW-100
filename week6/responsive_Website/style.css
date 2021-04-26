@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -6,10 +6,10 @@ body {
     background-color: rgb(79, 241, 225);
 }
 #container {
-    height: 50vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35% 125% 40% 20% 25%;
+    grid-template-rows: 35% 115% 40% 20% 25%;
     column-gap: 15px;
     row-gap: 15px; 
 }
@@ -17,7 +17,7 @@ header {
     text-align: center;
     font-family: Pacifico;
     padding-left: 50px;
-    font-size: 18px;
+    font-size: 11px;
     grid-column: 1;
     grid-row: 1;
     display: flex;
@@ -27,9 +27,11 @@ header {
 }
 main {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/week6/responsive_Website/resort_Water.jpg");
-    height: 60vh;
+    height: 85vh;
     background-size: cover;
     background-position: center;
+    grid-row: 2/2;
+    grid-column: 1/5;   
 }
 nav {
     grid-row: 1;
@@ -49,6 +51,7 @@ ul, li {
 }
 
 ul, li, a {
+    font-size: 12px;
     font-family: Pacifico;
     text-decoration: none;
     color: rgb(233, 30, 131);
@@ -59,22 +62,18 @@ ul, li, a:hover {
 color: rgb(9, 238, 238);    
 }
 
-a{
+a{  
     border-style: none;
     border-spacing: 50px;
 }
 
-main {
-    grid-row: 2/2;
-    grid-column: 1/5;   
-}
 h4 {
     color: hotpink;
-    font-size: 25px;
+    font-size: 12px;
     text-decoration: underline;
     font-family: Pacifico;
     position: absolute;
-    left: 13% ;
+    left: 12% ;
     transform: translateX(-50%);
 }
     
@@ -133,22 +132,213 @@ article {
     grid-row: 4;
 }
 p {
+    font-size: 8px;
     text-align: center;
     font-family: Impact;
 }
 footer{
     background-color: rgb(5, 196, 196);
     grid-row: 5;
-    text-align: center;
-
+    text-align: center;  
+     
+}
+#myfooter1 {
+    margin-left: 10px;
 }
 #myfooter1 p {
+    font-size: 50%;
     font-family: Pacifico;
     color: rgb(255, 23, 139);
 
 }
+#myfooter2{
+    font-size: 70%;
+
+}
 #myfooter3 {
+    padding: 50px 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     background-image: url("./istockphoto-584209092-1024x1024.jpg");
     background-size: cover;
     background-position: center;
+    margin-bottom: 30px;
+}
+#myfooter4 {
+    margin-right: 10px;
+    background-image: url("./soccer_sunset.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+
+/*Mobile Phone*/
+@media only screen and (min-width: 360px) and (max-width: 720px){
+    body {
+        background-color: rgb(79, 241, 225);
+    }
+    #container {
+        height: 75vh;
+        display:flex;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 35% 125% 40% 45% 45%;
+        column-gap: 15px;
+        row-gap: 15px; 
+    }
+    header {
+        text-align: center;
+        font-family: Pacifico;
+        padding-left: 50px;
+        font-size: 18px;
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+    }
+    main {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/week6/responsive_Website/resort_Water.jpg");
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        grid-row: 2/2;
+        grid-column: 1/5; 
+    
+    }
+    
+    nav {
+        grid-row: 1;
+        grid-column: 2/5 ;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 25px;
+    }
+    ul, li {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    
+    ul, li, a {
+        font-family: Pacifico;
+        text-decoration: none;
+        color: rgb(233, 30, 131);
+        transition: 0.8s ease;
+    }
+    
+    ul, li, a:hover {
+    color: rgb(9, 238, 238);    
+    }
+    
+    a{
+        border-style: none;
+        border-spacing: 50px;
+    }
+    
+    h4 {
+        color: hotpink;
+        font-size: 15px;
+        text-decoration: underline;
+        font-family: Pacifico;
+        position: absolute;
+        left: 13% ;
+        top: 10%;
+        transform: translateX(-40%);
+    }
+        
+    figure {
+        grid-row: 3;
+    }
+    #figure1 {
+        color: rgb(10, 32, 235);
+        text-align: center;
+        font-family: Pacifico;
+        font-size: 22px;
+        border: 3px solid blue;
+        padding: 10px 10px;
+        margin-left: 10px;
+        background-image: url("./bora.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #figure2 {
+        color:#ca22c2;
+        text-align: center;
+        font-family: Pacifico;
+        font-size: 22px;
+        border: 3px solid rgb(255, 9, 132);
+        padding: 10px 10px;
+        margin-left: 10px;
+        background-image: url("/week6/responsive_Website/caribbean_islands.jpg");
+        background-size: cover;
+        background-position: center
+    }
+    #figure3 {
+        color: rgb(255, 87, 45);
+        text-align: center;
+        font-family: Pacifico;
+        font-size: 22px;
+        border: 3px solid purple;
+        padding: 10px 10px;
+        margin-left: 10px;
+        background-image: url("./night_island2.jpg");
+        background-size: cover;
+        background-position: center
+    }
+    #figure4 {
+        color: rgb(29, 251, 255);
+        text-align: center;
+        font-family: Pacifico;
+        font-size: 30px;
+        border: 3px solid springgreen;
+        padding: 10px 10px;
+        margin-right: 10px;
+        background-image: url("./coco_drinks.jpg");
+        background-size: cover;
+        background-position: center
+    }
+    article {
+        grid-row: 4;
+    }
+    p {
+        text-align: center;
+        font-family: Impact;
+        font-size: 15px;
+    }
+    footer{
+        background-color: rgb(5, 196, 196);
+        grid-row: 5;
+        text-align: center;
+    }
+    
+    #myfooter1 p {
+        font-size: 15px;
+        font-family: Pacifico;
+        color: rgb(255, 23, 139);
+    }
+    
+    #myfooter3 {
+        margin-left: 50px;
+        padding: 35px 35px;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background-image: url("./istockphoto-584209092-1024x1024.jpg");
+        height: 160px;
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    #myfooter4 {
+        padding: 100px 100px 100px 100px;
+        background-image: url("./soccer_sunset.jpg");
+        background-size: cover;
+        background-position:center;
+    }
 }
