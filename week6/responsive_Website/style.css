@@ -120,7 +120,7 @@ figure {
     color: rgb(29, 251, 255);
     text-align: center;
     font-family: Pacifico;
-    font-size: 40px;
+    font-size: 50px;
     border: 3px solid springgreen;
     padding: 10px 10px;
     margin-right: 10px;
@@ -134,7 +134,7 @@ article {
 p {
     font-size: 19px;
     text-align: center;
-    font-family: Impact;
+    font-family: Helvetica;
 }
 footer{
     background-color: rgb(5, 196, 196);
@@ -275,7 +275,7 @@ footer{
     }
 }
 
-/* Tablet media queary*/
+/* Tablet media query*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
 #container {
