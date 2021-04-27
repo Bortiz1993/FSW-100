@@ -26,7 +26,7 @@ header {
 
 }
 main {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/week6/responsive_Website/resort_Water.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./resort_Water.jpg");
     height: 85vh;
     background-size: cover;
     background-position: center;
@@ -82,27 +82,41 @@ figure {
 }
 #figure1 {
     color: rgb(0, 255, 242);
-    text-align: center;
     font-family: Pacifico;
-    font-size: 40px;
     border: 3px solid blue;
     padding: 10px 10px;
     margin-left: 10px;
     background-image: url("./bora.jpg");
     background-size: cover;
     background-position: center;
+
 }
+#figure1 h5 {
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+
 #figure2 {
     color:rgb(255, 16, 136);
-    text-align: center;
     font-family: Pacifico;
-    font-size: 35px;
     border: 3px solid rgb(255, 9, 132);
     padding: 10px 10px;
     margin-left: 10px;
-    background-image: url("/week6/responsive_Website/caribbean_islands.jpg");
+    background-image: url("./caribbean_islands.jpg");
     background-size: cover;
     background-position: center
+}
+#figure2 h5{
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    
 }
 #figure3 {
     color: rgb(255, 87, 45);
@@ -116,6 +130,14 @@ figure {
     background-size: cover;
     background-position: center
 }
+#figure3 h5 {
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
 #figure4 {
     color: rgb(29, 251, 255);
     text-align: center;
@@ -128,19 +150,28 @@ figure {
     background-size: cover;
     background-position: center
 }
+#figure4 h5{
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
 article {
     grid-row: 4;
 }
-p {
-    font-size: 19px;
+article p {
+    font-size: 15px;
     text-align: center;
     font-family: Helvetica;
+    white-space: pre-wrap;
+    overflow: visible;
+    text-overflow: clip;
 }
 footer{
     background-color: rgb(5, 196, 196);
     grid-row: 5;
     grid-column: span 2;
-    
     text-align: center;  
      
 }
