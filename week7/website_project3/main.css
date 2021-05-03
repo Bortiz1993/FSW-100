@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(192, 100%, 55%);
+}
+#container {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 80% 40% 18%;
+    row-gap: 15px; 
+}
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(5, 119, 128, 0.5)), url("./images/more_chocolate.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/2;
+    grid-column: 1/5;   
+}
+#main-nav {
+    grid-row: 1;
+    grid-column: 2/5 ;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#nav-unordered {
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul, li, a {
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+    transition: 0.8s ease;
+}
+
+ul, li, a:hover {
+color: burlywood;
+}
+
+a{  
+    border-spacing: 50px;
+}
+#logo {
+    font-family: Great vibes;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: cyan;
+}
+#sub-title {
+    font-family: Poppins;
+    padding-top: 5px;
+    padding-left: 60px;
+    font-size: 15px;
+    color: cyan;
+}
+#slogan {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slogan h1 {
+    color: cyan;
+    font-size: 50px;
+    font-family: Poppins;
+    text-align: center;
+}
+#welcome {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome h2 {
+    color: cyan;
+    font-size: 30px;
+    font-family: Poppins;
+}
+section {
+    grid-row: 3;
+    grid-column: span 2;
+}
+.section h3 {
+    color: brown;
+    padding-top: 30px;
+    text-align: center;
+    font-family: Great vibes;
+    font-size: 25px;
+
+}
+.section p {
+    color: ghostwhite;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight:bold;
+}
+.image {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer {
+    background-color: black;
+    grid-row: 4;
+    grid-column: span 2;
+}
+.footer h2 {
+    text-align: center;
+    font-family: Fredoka One;
+    font-size: 15px;
+    color: ghostwhite;
+}
+.footer p {
+    text-align: center;
+    font-family: Fredoka One;
+    font-size: 13px;
+    color: ghostwhite;
+}
+/*Mobile Only*/
+@media only screen and (min-width: 360px) and (max-width: 720px){
+    #logo {
+        padding-left: 0px;
+        text-align: center;
+    }
+    #sub-title {
+        padding-left: 0px;
+        text-align: center;
+    }
+    #slogan{
+        top: 35%;
+    }
+    #slogan h1 {
+        font-size: 20px;
+    }
+    #welcome {
+        top: 50%
+    }
+    #welcome h2 {
+        font-size: 25px;
+    }
+    #container {
+        grid-template-rows: 10% 80% 40% 26%;
+
+    }
+
+}
+/*Tablet Only*/
+@media only screen and (min-width: 721px) and (max-width: 1024px){
+    #slogan h1 {
+        font-size: 30px;
+    }
+}
