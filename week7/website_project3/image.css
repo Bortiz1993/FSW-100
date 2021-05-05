@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(192, 100%, 55%);
+}
+#container {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 65% 50% 20%;
+    row-gap: 15px; 
+}
+main {
+    grid-row: 2;
+    grid-column: span 4;   
+}
+section {
+    grid-row: 3;
+    grid-column: span 4;
+}
+#main-nav {
+    grid-row: 1;
+    grid-column: 2/5 ;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#nav-unordered {
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul, li, a {
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+    transition: 0.8s ease;
+}
+
+ul, li, a:hover {
+color: burlywood;
+}
+
+a{  
+    border-spacing: 50px;
+}
+#logo {
+    font-family: Fredoka One;
+    padding-top:30px;
+    padding-left: 30px;
+    font-size: 35px;
+    color: cyan;
+}
+#sub-title {
+    font-family: Fredoka One;
+    padding-top: 5px;
+    padding-left: 60px;
+    font-size: 15px;
+    color: cyan;
+}
+
+.footer {
+    background-color: black;
+    grid-row: 4;
+    grid-column: span 2;
+}
+.footer h2 {
+    text-align: center;
+    font-family: Fredoka One;
+    font-size: 15px;
+    color: ghostwhite;
+}
+.footer p {
+    text-align: center;
+    font-family: Fredoka One;
+    font-size: 13px;
+    color: ghostwhite;
+}
+
+
+.gallery {
+    filter: grayscale(100%);
+    margin-top: 30px;
+    margin-left: 150px;
+    border: 5px double salmon;
+    transition: 1s;
+}
+.gallery2 {
+    filter: grayscale(100%);
+    margin-top: 30px;
+    margin-left: 150px;
+    border: 5px groove purple;
+    transition: 1s;
+}
+.gallery:hover {
+    filter: grayscale(0);
+    transform: scale(1.1)
+}
+.gallery2:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/* Mobile Phone*/
+@media only screen and (min-width: 360px) and (max-width: 720px){
+    #container {
+        display: block;
+        
+    }
+    .gallery {
+        margin-left: 70px;
+    }
+    .gallery2 {
+        margin-left: 70px;
+    }
+}
+/*Tablet*/
+@media only screen and (min-width: 721px) and (max-width: 1024px){
+    #container {
+        display: block;
+    }
+    .gallery {
+        margin-left: 100px;
+    }
+    .gallery2 {
+        margin-left: 100px;
+    }
+}
+
+/*Laptops*/
+@media only screen and (min-width: 1025px) and (max-width:1440px){
+    .gallery {
+        margin-top: 150px;
+        margin-left: 35px;
+    }
+    .gallery2 {
+        margin-left: 35px
+    }
+
+}

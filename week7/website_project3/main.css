@@ -54,14 +54,14 @@ a{
     border-spacing: 50px;
 }
 #logo {
-    font-family: Great vibes;
+    font-family: Fredoka One;
     padding-top:30px;
     padding-left: 30px;
     font-size: 35px;
     color: cyan;
 }
 #sub-title {
-    font-family: Poppins;
+    font-family: Fredoka One;
     padding-top: 5px;
     padding-left: 60px;
     font-size: 15px;
@@ -76,7 +76,7 @@ a{
 #slogan h1 {
     color: cyan;
     font-size: 50px;
-    font-family: Poppins;
+    font-family: Fredoka One;
     text-align: center;
 }
 #welcome {
@@ -87,9 +87,10 @@ a{
 }
 
 #welcome h2 {
+    text-align: center;
     color: cyan;
     font-size: 30px;
-    font-family: Poppins;
+    font-family: Fredoka One;
 }
 section {
     grid-row: 3;
@@ -119,8 +120,11 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    transition: 2s;
 }
-
+.image:hover{
+    transform: scale(1.1);
+}
 .footer {
     background-color: black;
     grid-row: 4;
@@ -172,3 +176,4 @@ section {
         font-size: 30px;
     }
 }
+/* it looks fine for laptops.*/
